@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    /*main color*/
+    --one: rgb(0, 29, 76);
+    /*background color*/
+    --two: rgb(227, 255, 249);
+    /*text-hover color*/
+    --thr: #3486eb;
+  }
+
+  body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: var(--one);
+  }
+  
+  .wrapper a {
+    text-decoration: none;
+    color: var(--two);
+    font-weight: bold;
+    transition: color .1s;
+  }
+
+  .site a {
+    color: var(--one);
+  }
+
+  .wrapper b {
+    font-size: 0.75rem;
+  }
+  
+  a {
+    color: var(--one);
+  }
+
+  a:hover {
+    color: var(--thr);
+  }
+  
+  button {
+    background-color: var(--two);
+    border: 0;
+    padding: 1%;
+    color: white;
+    font-weight: bold;
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: var(--thr);
+  }
+  
+  .post-list {
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+  }
+  
+  textarea, input {
+    padding: .5%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea:focus, input:focus {
+    outline: none;
+    border: 1px solid var(--thr);
+  }
+  
+  textarea {
+    min-width: 40%;
+    min-height: 100px;
+  }
+  
+  form > div {
+    margin-bottom: 2%;
+  }
+  
+  form label {
+    display: block;
+  }
+  
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    background-color: var(--one);
+  }
+  
+  header h1 {
+    font-size: 1em;
+    border: 2px outset #7d7d7d;
+    border-radius: 5px;
+    background-color: var(--two);
+    padding: 1.25rem;
+  }
+  
+  main {
+    flex: 1;
+    padding: 2% 4%;
+    background-color: var(--two);
+  }
+
+  nav {
+      padding: 1.2rem;
+      text-align: right;
+      white-space: pre;
+  }
+
+  .edit-btn a {
+    color: var(--one);
+    font-size: 00.75rem;
+  }
+  .edit-btn {
+    float: right;
+    margin-top: -43px;
+    margin-right: 10px;
+  }
+
+  .user-edit-btn a {
+    color: var(--one);
+    font-size: 00.75rem;
+  }
+  .user-edit-btn {
+    float: right;
+    margin-top: -17px;
+    margin-right: 0px;
+  }
+
+  .btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--two);
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .1s;
+    margin-left: 16px;
+  }
+
+  .site {
+    color: var(--one);
+    font-size: 1.2rem;
+  }
+  
+  .btn-no-style:hover {
+    background: none;
+    color: var(--thr);
+  }
+  
+  .delete-post-btn {
+    background-color: #d41414;
+  }
+  
+  .delete-post-btn:hover {
+    background-color: #ff643d;
+  }
+  
+  .post {
+    margin-bottom: 2%;
+    line-height: 150%;
+    border-style: solid;
+    border-color: var(--one);
+    border-radius: 5px;
+  }
+
+  .post .content {
+    padding: 5px;
+  }
+  
+  .post .title {
+    padding: 5px;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: var(--two);
+    background-color: var(--one);
+  }
+
+  .post .title .details {
+    font-size: 0.75rem;
+  }
+
+  .post .title span {
+    font-size: 1.0rem;
+    color: #7d7d7d;
+  }
+  
+  .edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+    color: var(--one);
+  }
+  
+  .upvote-btn {
+    background-color: #197d0f;
+    transition: background-color .1s;
+  }
+  
+  .upvote-btn:hover {
+    background-color: #1f9c13;
+  }
+  
+  .comment-form {
+    margin-bottom: 5%;
+  }
+  
+  .comment {
+    background-color: var(--one);
+    padding: 1%;
+    margin-bottom: 1%;
+    border-radius:5px;
+  }
+  
+  .comment:nth-child(odd) {
+    background-color: var(--one);
+    color: var(--two);
+  }
+
+  .comment .text {
+    color: var(--two);
+  }
+
+  .new-post-form .btn {
+    background-color: var(--one);
+    color: var(--two);
+  }
+  
+  .login-btn {
+    padding: 5px;
+    color: var(--two);
+    background-color: var(--one);
+    border-radius: 5px;
+  }
+
+  .signup {
+    color: var(--one);
+  }
+
+  .btn1 {
+    padding: 5px;
+    color: var(--two);
+    background-color: var(--one);
+    border-radius: 5px;
+  }
+
+  .btn {
+    background-color: var(--one);
+    color: var(--two);
+  }
+
+  .btn2 {
+    padding: 5px;
+    color: var(--one);
+  }
+
+  .btn2:hover {
+    padding: 5px;
+    color: blue;
+  }
+
+  .comment .meta {
+    color: white;
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+  }
+  
+  .comment-form button {
+    background-color: var(--one);
+    color: var(--two);
+  }
+
+  form button {
+    background-color: var(--one);
+    color: var(--two);
+  }
+
+  .new-post-form input, textarea {
+    width: 80%;
+  }
+  
+  .edit-post-form {
+    margin-bottom: 5%;
+  }
+
+  .edit-post-form a {
+    color: var(--one);
+  }
+
+  .row {
+      display: flex;
+  }
+
+  .column {
+      flex: 50%;
+      padding: 1.25rem;
+  }
+  
+  footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+    color: var(--two);
+    background-color: var(--one);
+  }

@@ -1,11 +1,7 @@
-<form action="" style="padding-bottom: 15px;">
-  <input type="text" placeholder="Search Posts..." />
-  <button type="submit">Search</button>
-</form>
-<ul class="post-list">
+<ol class="post-list">
   {{#each posts as |post|}}
   <li>
-    {{> post-info post }}
+      {{> post-info post}}
   </li>
   {{/each}}
-</ul>
+</ol>
